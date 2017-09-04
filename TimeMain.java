@@ -16,12 +16,12 @@ class Time{
     }
     void add(Time obj1,Time obj2){
         this.sec = obj1.sec + obj2.sec;
+        this.min = obj1.min + obj2.min;
+        this.hr = obj1.hr + obj2.hr;
         this.min+= this.sec / 60;
         this.sec = this.sec % 60;
-        this.min = obj1.min + obj2.min;
         this.hr+= this.min / 60;
         this.min = this.min % 60;
-        this.hr = obj1.hr + obj2.hr;
         this.hr%=24;
         }
 }
